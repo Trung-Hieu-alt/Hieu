@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Kiểu mặc định */
+.my-element {
+  text-decoration: none;
+  color: black;
+  cursor: pointer; /* Hiển thị dấu tay khi di chuột qua */
+}
+
+/* Khi di chuột hoặc focus vào, đổi màu và gạch chân */
+.my-element:hover, .my-element:focus {
+  text-decoration: underline;
+  color: blue;
+}
+</style>
+</head>
+<body>
+
+<!-- Các phần tử thử nghiệm -->
+<div class="my-element" tabindex="0">Mới nhất</div>
+<div class="my-element" tabindex="0">Xem nhiều</div>
+<div class="my-element" tabindex="0">Thư viện</div>
+<div class="my-element" tabindex="0">Xem tất cả ➜</div>
+
+</body>
+</html>

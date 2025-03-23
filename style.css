@@ -1,0 +1,191 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: flex-start; 
+            align-items: center;
+            padding: 10px;
+            padding-top:0;
+            margin-top: 5px;
+            margin-left: 20px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 10%;
+            margin-right: 10px; /*Khoảng cách từ logo đến chữ*/
+            padding-left: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 15px; /*Khoang cach giua cac layout*/
+            margin-left: -100px;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            padding: 0 5px;
+        }
+
+        nav a:hover {
+            color: #0545bc; /* Màu nền khi di chuột vào */
+        }
+
+        .right-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .divider {
+            height: 30px;
+            width: 2px;
+            background-color: #aaa;
+            margin: 0 10px;
+        }
+
+        .notification {
+            position: relative;
+        }
+
+        .notification .dot {
+            position: absolute;
+            right: 4px;
+            width: 6px;
+            height: 6px;
+            background-color: orange;
+            border-radius: 50%;
+        }
+
+        .login-btn {
+            background-color: #0767b1;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login-btn:hover{
+            background-color: #0545bc;
+        }
+
+        #banner{
+            width: 100%;
+            height:300px;          
+            margin-top: ;
+            background-image: url(Resources/background_banner.png);
+          }
+          .search-bar {
+            display: flex;
+            align-items: center;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            width: 450px;
+            background-color: white;
+        }
+        .search-bar input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            padding: 5px;
+        }
+        .search-bar button {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+        .search-bar button:hover {
+            color: #333;
+        }
+        
+        .text {
+            font-size: 22px;
+            color: white;
+            padding: 50px 20px 0 100px;
+        }
+
+        #banner a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .right-image {
+            margin-right: 100px;
+            float: right;
+            margin-top: -250px;
+        }
+
+        .right-image img {
+            
+            width: 550px; /* Kích thước ảnh */
+            height: auto;
+            border-radius: 10px; /* Bo góc ảnh (tuỳ chọn) */
+        }
+        
+
+/*-----------------Main Content------------------------------------------*/
+
+/* Giao diện các tab */
+.tabs {
+    display: flex;
+    justify-content: start;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+.tabs a {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #555;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; /* Dấu gạch chân ban đầu trong suốt */
+    transition: color 0.3s, border-bottom 0.3s;
+}
+.tabs a:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+.tabs a:focus {
+    outline: none;
+}
+
+/* Gạch chân tab được chọn */
+.tabs a:target {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;    /*K biết sao fail chỗ này:)*/
+}
+
+/* Nội dung mặc định ẩn */
+.content {
+    display: none;
+    font-size: 1.2rem;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Hiển thị nội dung tab được chọn */
+.content:target {
+    display: block;
+}
+
+.left{
+    padding-left: 300px;
+}
+.left a{
+    color: #0767b1;
+    text-decoration: none;
+}
